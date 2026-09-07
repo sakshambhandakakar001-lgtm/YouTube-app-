@@ -1,0 +1,59 @@
+2026-09-07 10:31:36,643 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2026-09-07 10:31:36,680 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'create']
+2026-09-07 10:31:36,685 DEBUG    root            On GCE from disk cache: False
+2026-09-07 10:31:36,701 DEBUG    root            Running [gcloud.projects.create] with arguments: [--name: "My YouTube App", PROJECT_ID: "yt-app-saksham-9988"]
+2026-09-07 10:31:36,819 DEBUG    root            On GCE from memory cache: False
+2026-09-07 10:31:36,903 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2026-09-07 10:31:39,023 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects?alt=json HTTP/1.1" 200 None
+2026-09-07 10:31:39,031 INFO     ___FILE_ONLY___ Create in progress for [https://cloudresourcemanager.googleapis.com/v1/projects/yt-app-saksham-9988].
+
+2026-09-07 10:31:39,044 INFO     ___FILE_ONLY___ Waiting for [operations/create_project.global.5278659860982989417] to finish...
+2026-09-07 10:31:40,071 DEBUG    root            On GCE from memory cache: False
+2026-09-07 10:31:40,107 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2026-09-07 10:31:41,902 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/operations/create_project.global.5278659860982989417?alt=json HTTP/1.1" 200 None
+2026-09-07 10:31:41,935 DEBUG    root            (gcloud.projects.create) Operation [create_project.global.5278659860982989417] failed: 9: Callers must accept Terms of Service
+- '@type': type.googleapis.com/google.rpc.PreconditionFailure
+  violations:
+  - description: Callers must accept Terms of Service
+    subject: cloud
+    type: TOS
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 951, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/data/data/com.termux/files/home/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 968, in Run
+    resources = command_instance.Run(args)
+  File "/data/data/com.termux/files/home/google-cloud-sdk/lib/surface/projects/create.py", line 164, in Run
+    create_op = operations.WaitForOperation(create_op)
+  File "/data/data/com.termux/files/home/google-cloud-sdk/lib/googlecloudsdk/api_lib/resource_manager/operations.py", line 83, in WaitForOperation
+    return retryer.RetryPollOperation(poller, operation)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/home/google-cloud-sdk/lib/googlecloudsdk/api_lib/resource_manager/operations.py", line 118, in RetryPollOperation
+    return self._Retryer().RetryOnResult(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        lambda: operation_poller.Poll(operation),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        should_retry_if=self._ShouldRetry,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        sleep_ms=self._first_retry_sleep_ms)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/home/google-cloud-sdk/lib/googlecloudsdk/core/util/retry.py", line 253, in RetryOnResult
+    result = func(*args, **kwargs)
+  File "/data/data/com.termux/files/home/google-cloud-sdk/lib/googlecloudsdk/api_lib/resource_manager/operations.py", line 119, in <lambda>
+    lambda: operation_poller.Poll(operation),
+            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/data/data/com.termux/files/home/google-cloud-sdk/lib/googlecloudsdk/api_lib/resource_manager/operations.py", line 155, in Poll
+    raise OperationFailedException(latest)
+googlecloudsdk.api_lib.resource_manager.operations.OperationFailedException: Operation [create_project.global.5278659860982989417] failed: 9: Callers must accept Terms of Service
+- '@type': type.googleapis.com/google.rpc.PreconditionFailure
+  violations:
+  - description: Callers must accept Terms of Service
+    subject: cloud
+    type: TOS
+
+2026-09-07 10:31:41,958 ERROR    root            (gcloud.projects.create) Operation [create_project.global.5278659860982989417] failed: 9: Callers must accept Terms of Service
+- '@type': type.googleapis.com/google.rpc.PreconditionFailure
+  violations:
+  - description: Callers must accept Terms of Service
+    subject: cloud
+    type: TOS
+

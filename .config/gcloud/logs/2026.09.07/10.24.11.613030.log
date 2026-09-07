@@ -1,0 +1,269 @@
+2026-09-07 10:24:11,631 DEBUG    root            Failed to read GCE cache file: [Errno 2] No such file or directory: '/data/data/com.termux/files/home/.config/gcloud/gce'
+2026-09-07 10:24:12,302 DEBUG    root            Failed to check metadata server: <urlopen error [Errno 7] No address associated with hostname>
+2026-09-07 10:24:12,316 DEBUG    root            Loaded Command Group: ['gcloud', 'components']
+2026-09-07 10:24:12,350 DEBUG    root            Loaded Command Group: ['gcloud', 'components', 'list']
+2026-09-07 10:24:12,367 DEBUG    root            Running [gcloud.components.list] with arguments: [--quiet: "True"]
+2026-09-07 10:24:12,401 DEBUG    root            On GCE from memory cache: False
+2026-09-07 10:24:12,422 DEBUG    root            On GCE from memory cache: False
+2026-09-07 10:24:12,433 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2026-09-07 10:24:12,812 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 27641
+2026-09-07 10:24:12,980 INFO     ___FILE_ONLY___ 
+Your current Google Cloud CLI version is: 583.0.0
+
+2026-09-07 10:24:12,983 INFO     ___FILE_ONLY___ The latest available version is: 583.0.0
+
+2026-09-07 10:24:12,984 INFO     ___FILE_ONLY___ 
+
+2026-09-07 10:24:12,989 DEBUG    root            Chosen display Format:table[box,title="Components"](state.name:label=Status,name:label=Name,id:label=ID,size.size(zero="",min=1048576):label=Size:align=right)
+2026-09-07 10:24:12,992 INFO     root            Display format: "table[box,title="Components"](state.name:label=Status,name:label=Name,id:label=ID,size.size(zero="",min=1048576):label=Size:align=right)"
+2026-09-07 10:24:13,339 INFO     ___FILE_ONLY___ ┌───────────────────────────────────────────────────────────────────────────────────────────────────────┐
+2026-09-07 10:24:13,340 INFO     ___FILE_ONLY___ 
+
+2026-09-07 10:24:13,341 INFO     ___FILE_ONLY___ │                                               Components                                              │
+2026-09-07 10:24:13,341 INFO     ___FILE_ONLY___ 
+
+2026-09-07 10:24:13,341 INFO     ___FILE_ONLY___ ├───────────────┬────────────────────────────────────────────────┬──────────────────────────┬───────────┤
+2026-09-07 10:24:13,342 INFO     ___FILE_ONLY___ 
+
+2026-09-07 10:24:13,342 INFO     ___FILE_ONLY___ │     Status    │                      Name                      │            ID            │    Size   │
+2026-09-07 10:24:13,342 INFO     ___FILE_ONLY___ 
+
+2026-09-07 10:24:13,343 INFO     ___FILE_ONLY___ ├───────────────┼────────────────────────────────────────────────┼──────────────────────────┼───────────┤
+2026-09-07 10:24:13,343 INFO     ___FILE_ONLY___ 
+
+2026-09-07 10:24:13,343 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,344 INFO     ___FILE_ONLY___ Not Installed
+2026-09-07 10:24:13,344 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,345 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,345 INFO     ___FILE_ONLY___ Cloud Datastore Emulator                      
+2026-09-07 10:24:13,345 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,345 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,346 INFO     ___FILE_ONLY___ cloud-datastore-emulator
+2026-09-07 10:24:13,346 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,346 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,346 INFO     ___FILE_ONLY___  36.2 MiB
+2026-09-07 10:24:13,346 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,347 INFO     ___FILE_ONLY___ │
+2026-09-07 10:24:13,347 INFO     ___FILE_ONLY___ 
+
+2026-09-07 10:24:13,348 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,348 INFO     ___FILE_ONLY___ Not Installed
+2026-09-07 10:24:13,348 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,349 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,349 INFO     ___FILE_ONLY___ Cloud Firestore Emulator                      
+2026-09-07 10:24:13,349 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,349 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,350 INFO     ___FILE_ONLY___ cloud-firestore-emulator
+2026-09-07 10:24:13,350 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,350 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,350 INFO     ___FILE_ONLY___  66.9 MiB
+2026-09-07 10:24:13,351 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,351 INFO     ___FILE_ONLY___ │
+2026-09-07 10:24:13,351 INFO     ___FILE_ONLY___ 
+
+2026-09-07 10:24:13,352 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,352 INFO     ___FILE_ONLY___ Not Installed
+2026-09-07 10:24:13,352 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,353 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,353 INFO     ___FILE_ONLY___ Cloud Pub/Sub Emulator                        
+2026-09-07 10:24:13,353 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,353 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,354 INFO     ___FILE_ONLY___ pubsub-emulator         
+2026-09-07 10:24:13,354 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,354 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,354 INFO     ___FILE_ONLY___  50.6 MiB
+2026-09-07 10:24:13,355 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,355 INFO     ___FILE_ONLY___ │
+2026-09-07 10:24:13,355 INFO     ___FILE_ONLY___ 
+
+2026-09-07 10:24:13,355 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,356 INFO     ___FILE_ONLY___ Not Installed
+2026-09-07 10:24:13,356 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,357 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,357 INFO     ___FILE_ONLY___ Managed Flink Client                          
+2026-09-07 10:24:13,357 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,357 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,358 INFO     ___FILE_ONLY___ managed-flink-client    
+2026-09-07 10:24:13,358 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,358 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,358 INFO     ___FILE_ONLY___ 383.4 MiB
+2026-09-07 10:24:13,359 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,359 INFO     ___FILE_ONLY___ │
+2026-09-07 10:24:13,359 INFO     ___FILE_ONLY___ 
+
+2026-09-07 10:24:13,360 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,360 INFO     ___FILE_ONLY___ Not Installed
+2026-09-07 10:24:13,360 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,360 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,361 INFO     ___FILE_ONLY___ gcloud Alpha Commands                         
+2026-09-07 10:24:13,361 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,361 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,362 INFO     ___FILE_ONLY___ alpha                   
+2026-09-07 10:24:13,362 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,362 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,362 INFO     ___FILE_ONLY___   < 1 MiB
+2026-09-07 10:24:13,363 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,363 INFO     ___FILE_ONLY___ │
+2026-09-07 10:24:13,363 INFO     ___FILE_ONLY___ 
+
+2026-09-07 10:24:13,363 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,364 INFO     ___FILE_ONLY___ Not Installed
+2026-09-07 10:24:13,364 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,364 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,365 INFO     ___FILE_ONLY___ gcloud Beta Commands                          
+2026-09-07 10:24:13,365 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,365 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,365 INFO     ___FILE_ONLY___ beta                    
+2026-09-07 10:24:13,365 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,366 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,366 INFO     ___FILE_ONLY___   < 1 MiB
+2026-09-07 10:24:13,366 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,366 INFO     ___FILE_ONLY___ │
+2026-09-07 10:24:13,367 INFO     ___FILE_ONLY___ 
+
+2026-09-07 10:24:13,367 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,368 INFO     ___FILE_ONLY___ Not Installed
+2026-09-07 10:24:13,368 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,368 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,368 INFO     ___FILE_ONLY___ gcloud Preview Commands                       
+2026-09-07 10:24:13,369 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,369 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,369 INFO     ___FILE_ONLY___ preview                 
+2026-09-07 10:24:13,369 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,370 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,370 INFO     ___FILE_ONLY___   < 1 MiB
+2026-09-07 10:24:13,370 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,370 INFO     ___FILE_ONLY___ │
+2026-09-07 10:24:13,370 INFO     ___FILE_ONLY___ 
+
+2026-09-07 10:24:13,371 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,371 INFO     ___FILE_ONLY___ Not Installed
+2026-09-07 10:24:13,371 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,372 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,372 INFO     ___FILE_ONLY___ gcloud app Java Extensions                    
+2026-09-07 10:24:13,372 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,373 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,373 INFO     ___FILE_ONLY___ app-engine-java         
+2026-09-07 10:24:13,373 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,373 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,373 INFO     ___FILE_ONLY___ 149.6 MiB
+2026-09-07 10:24:13,374 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,374 INFO     ___FILE_ONLY___ │
+2026-09-07 10:24:13,374 INFO     ___FILE_ONLY___ 
+
+2026-09-07 10:24:13,374 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,375 INFO     ___FILE_ONLY___ Not Installed
+2026-09-07 10:24:13,375 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,375 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,376 INFO     ___FILE_ONLY___ gcloud app Python Extensions                  
+2026-09-07 10:24:13,376 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,376 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,376 INFO     ___FILE_ONLY___ app-engine-python       
+2026-09-07 10:24:13,377 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,377 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,377 INFO     ___FILE_ONLY___   3.8 MiB
+2026-09-07 10:24:13,378 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,378 INFO     ___FILE_ONLY___ │
+2026-09-07 10:24:13,378 INFO     ___FILE_ONLY___ 
+
+2026-09-07 10:24:13,378 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,379 INFO     ___FILE_ONLY___ Not Installed
+2026-09-07 10:24:13,379 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,379 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,379 INFO     ___FILE_ONLY___ gcloud app Python Extensions (Extra Libraries)
+2026-09-07 10:24:13,380 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,380 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,380 INFO     ___FILE_ONLY___ app-engine-python-extras
+2026-09-07 10:24:13,381 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,381 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,381 INFO     ___FILE_ONLY___   < 1 MiB
+2026-09-07 10:24:13,381 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,382 INFO     ___FILE_ONLY___ │
+2026-09-07 10:24:13,382 INFO     ___FILE_ONLY___ 
+
+2026-09-07 10:24:13,382 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,382 INFO     ___FILE_ONLY___ Not Installed
+2026-09-07 10:24:13,383 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,383 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,383 INFO     ___FILE_ONLY___ kubectl                                       
+2026-09-07 10:24:13,383 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,384 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,384 INFO     ___FILE_ONLY___ kubectl                 
+2026-09-07 10:24:13,384 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,385 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,385 INFO     ___FILE_ONLY___   < 1 MiB
+2026-09-07 10:24:13,385 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,385 INFO     ___FILE_ONLY___ │
+2026-09-07 10:24:13,386 INFO     ___FILE_ONLY___ 
+
+2026-09-07 10:24:13,387 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,387 INFO     ___FILE_ONLY___ Not Installed
+2026-09-07 10:24:13,387 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,388 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,388 INFO     ___FILE_ONLY___ pkg                                           
+2026-09-07 10:24:13,388 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,389 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,389 INFO     ___FILE_ONLY___ pkg                     
+2026-09-07 10:24:13,389 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,389 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,390 INFO     ___FILE_ONLY___          
+2026-09-07 10:24:13,390 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,390 INFO     ___FILE_ONLY___ │
+2026-09-07 10:24:13,390 INFO     ___FILE_ONLY___ 
+
+2026-09-07 10:24:13,391 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,391 INFO     ___FILE_ONLY___ Installed    
+2026-09-07 10:24:13,391 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,392 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,392 INFO     ___FILE_ONLY___ BigQuery Command Line Tool                    
+2026-09-07 10:24:13,392 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,393 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,393 INFO     ___FILE_ONLY___ bq                      
+2026-09-07 10:24:13,393 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,393 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,393 INFO     ___FILE_ONLY___   2.2 MiB
+2026-09-07 10:24:13,394 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,394 INFO     ___FILE_ONLY___ │
+2026-09-07 10:24:13,395 INFO     ___FILE_ONLY___ 
+
+2026-09-07 10:24:13,395 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,396 INFO     ___FILE_ONLY___ Installed    
+2026-09-07 10:24:13,396 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,397 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,397 INFO     ___FILE_ONLY___ Cloud Storage Command Line Tool               
+2026-09-07 10:24:13,397 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,398 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,398 INFO     ___FILE_ONLY___ gsutil                  
+2026-09-07 10:24:13,398 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,399 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,400 INFO     ___FILE_ONLY___  12.4 MiB
+2026-09-07 10:24:13,400 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,400 INFO     ___FILE_ONLY___ │
+2026-09-07 10:24:13,401 INFO     ___FILE_ONLY___ 
+
+2026-09-07 10:24:13,401 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,402 INFO     ___FILE_ONLY___ Installed    
+2026-09-07 10:24:13,402 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,403 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,403 INFO     ___FILE_ONLY___ Google Cloud CLI Core Libraries               
+2026-09-07 10:24:13,403 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,404 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,404 INFO     ___FILE_ONLY___ core                    
+2026-09-07 10:24:13,404 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,405 INFO     ___FILE_ONLY___ │ 
+2026-09-07 10:24:13,405 INFO     ___FILE_ONLY___  27.0 MiB
+2026-09-07 10:24:13,405 INFO     ___FILE_ONLY___  
+2026-09-07 10:24:13,405 INFO     ___FILE_ONLY___ │
+2026-09-07 10:24:13,405 INFO     ___FILE_ONLY___ 
+
+2026-09-07 10:24:13,406 INFO     ___FILE_ONLY___ └───────────────┴────────────────────────────────────────────────┴──────────────────────────┴───────────┘
+2026-09-07 10:24:13,406 INFO     ___FILE_ONLY___ 
+
+2026-09-07 10:24:13,406 INFO     ___FILE_ONLY___ To install or remove components at your current Google Cloud CLI version [583.0.0], run:
+  $ gcloud components install COMPONENT_ID
+  $ gcloud components remove COMPONENT_ID
+
+To update your Google Cloud CLI installation to the latest version [583.0.0], run:
+  $ gcloud components update
+
+

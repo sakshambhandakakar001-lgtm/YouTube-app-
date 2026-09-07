@@ -1,0 +1,97 @@
+2026-09-07 11:07:44,767 DEBUG    root            Loaded Command Group: ['gcloud', 'storage']
+2026-09-07 11:07:44,788 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets']
+2026-09-07 11:07:45,656 DEBUG    root            On GCE from disk cache: False
+2026-09-07 11:07:50,112 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'create']
+2026-09-07 11:07:50,132 DEBUG    root            Running [gcloud.storage.buckets.create] with arguments: [--location: "asia-south1", URL:1: "['gs://my-youtube-app-507905-media']"]
+2026-09-07 11:07:50,133 INFO     ___FILE_ONLY___ Creating gs://my-youtube-app-507905-media/...
+
+2026-09-07 11:07:50,189 DEBUG    root            On GCE from memory cache: False
+2026-09-07 11:07:50,403 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2026-09-07 11:07:51,175 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "POST /storage/v1/b?alt=json&enableObjectRetention=False&project=my-youtube-app-507905&projection=noAcl HTTP/1.1" 403 393
+2026-09-07 11:07:51,206 DEBUG    root            (gcloud.storage.buckets.create) HTTPError 403: The billing account for the owning project is disabled in state absent. This command is authenticated as sakshambhandakakar200727@gmail.com which is the active account specified by the [core/account] property
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/errors.py", line 324, in wrapper
+    return function(*args, **kwargs)
+  File "/data/data/com.termux/files/home/google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/gcs_json/client.py", line 533, in create_bucket
+    created_bucket_metadata = self.client.buckets.Insert(request)
+  File "/data/data/com.termux/files/home/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/storage/v1/storage_v1_client.py", line 538, in Insert
+    return self._RunMethod(
+           ~~~~~~~~~~~~~~~^
+        config, request, global_params=global_params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/home/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 747, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/home/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 753, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/home/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 612, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+        http_response, method_config=method_config, request=request)
+apitools.base.py.exceptions.HttpForbiddenError: HttpError accessing <https://storage.googleapis.com/storage/v1/b?alt=json&enableObjectRetention=False&project=my-youtube-app-507905&projection=noAcl>: response: <{'content-type': 'application/json; charset=UTF-8', 'x-guploader-uploadid': 'AJjja9bFUpWprCz0hTVtc3sltNTAdo43qzpKkj0PPZ6pv5LY4yc6q00IvkEPFbr8BpjcMV_r', 'date': 'Mon, 07 Sep 2026 05:37:51 GMT', 'vary': 'Origin, X-Origin', 'cache-control': 'no-cache, no-store, max-age=0, must-revalidate', 'expires': 'Mon, 01 Jan 1990 00:00:00 GMT', 'pragma': 'no-cache', 'content-length': '393', 'server': 'UploadServer', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'status': 403}>, content <{
+  "error": {
+    "code": 403,
+    "message": "The billing account for the owning project is disabled in state absent",
+    "errors": [
+      {
+        "message": "The billing account for the owning project is disabled in state absent",
+        "domain": "global",
+        "reason": "accountDisabled",
+        "locationType": "header",
+        "location": "Authorization"
+      }
+    ]
+  }
+}
+>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/data/com.termux/files/home/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 951, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/data/data/com.termux/files/home/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 968, in Run
+    resources = command_instance.Run(args)
+  File "/data/data/com.termux/files/home/google-cloud-sdk/lib/surface/storage/buckets/create.py", line 191, in Run
+    ).execute()
+      ~~~~~~~^^
+  File "/data/data/com.termux/files/home/google-cloud-sdk/lib/googlecloudsdk/command_lib/storage/tasks/buckets/create_bucket_task.py", line 45, in execute
+    api_factory.get_api(provider).create_bucket(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self._bucket_resource, request_config=request_config)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/home/google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/errors.py", line 328, in wrapper
+    core_exceptions.reraise(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        translate_error(
+        ^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        )
+        ^
+    )
+    ^
+  File "/data/data/com.termux/files/home/google-cloud-sdk/lib/googlecloudsdk/core/exceptions.py", line 146, in reraise
+    six.reraise(type(exc_value), exc_value, tb)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/home/google-cloud-sdk/lib/third_party/six/__init__.py", line 718, in reraise
+    raise value.with_traceback(tb)
+  File "/data/data/com.termux/files/home/google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/errors.py", line 324, in wrapper
+    return function(*args, **kwargs)
+  File "/data/data/com.termux/files/home/google-cloud-sdk/lib/googlecloudsdk/api_lib/storage/gcs_json/client.py", line 533, in create_bucket
+    created_bucket_metadata = self.client.buckets.Insert(request)
+  File "/data/data/com.termux/files/home/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/storage/v1/storage_v1_client.py", line 538, in Insert
+    return self._RunMethod(
+           ~~~~~~~~~~~~~~~^
+        config, request, global_params=global_params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/home/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 747, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/home/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 753, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/data/data/com.termux/files/home/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 612, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+        http_response, method_config=method_config, request=request)
+googlecloudsdk.api_lib.storage.errors.GcsApiError: HTTPError 403: The billing account for the owning project is disabled in state absent. This command is authenticated as sakshambhandakakar200727@gmail.com which is the active account specified by the [core/account] property
+2026-09-07 11:07:51,256 ERROR    root            (gcloud.storage.buckets.create) HTTPError 403: The billing account for the owning project is disabled in state absent. This command is authenticated as sakshambhandakakar200727@gmail.com which is the active account specified by the [core/account] property

@@ -1,0 +1,26 @@
+2026-09-07 10:29:36,516 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2026-09-07 10:29:36,735 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'list']
+2026-09-07 10:29:36,746 DEBUG    root            Running [gcloud.projects.list] with arguments: []
+2026-09-07 10:29:36,747 INFO     root            client_filter="None" server_filter="None"
+2026-09-07 10:29:36,792 DEBUG    root            On GCE from disk cache: False
+2026-09-07 10:29:36,808 DEBUG    root            On GCE from memory cache: False
+2026-09-07 10:29:37,089 DEBUG    root            Chosen display Format:
+    table(
+      projectId:sort=1,
+      name,
+      projectNumber,
+      tags.environment:label='ENVIRONMENT'
+    )
+
+2026-09-07 10:29:37,092 INFO     root            Display format: "
+    table(
+      projectId:sort=1,
+      name,
+      projectNumber,
+      tags.environment:label='ENVIRONMENT'
+    )
+"
+2026-09-07 10:29:37,106 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2026-09-07 10:29:39,765 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects?alt=json&filter=lifecycleState%3AACTIVE&pageSize=500 HTTP/1.1" 200 None
+2026-09-07 10:29:39,772 INFO     ___FILE_ONLY___ Listed 0 items.
+
