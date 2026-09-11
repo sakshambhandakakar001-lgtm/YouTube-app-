@@ -1,0 +1,432 @@
+[
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 13:59:51.023634",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 13:59:56.027371",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:00:01.030033",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:00:06.032886",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:00:11.035775",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:00:16.039659",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:00:21.044933",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:00:26.050944",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:00:31.057483",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:00:36.063830",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:00:41.070458",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:00:46.077378",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:00:51.083786",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:00:56.091633",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:01:01.098489",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:01:06.106975",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:01:11.115697",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:01:16.124158",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:01:21.132926",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:01:26.141715",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:01:31.148066",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:01:36.156595",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:01:41.166349",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:01:46.176111",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:01:51.181796",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:01:56.192722",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:02:01.203285",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:02:06.214147",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:02:11.224917",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:02:16.236581",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:02:21.248307",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:02:26.262744",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:02:31.275823",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:02:36.287772",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:02:41.301891",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:02:46.314619",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:02:51.327383",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:02:56.342090",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:03:01.355996",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:03:06.368961",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:03:11.383497",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:03:16.398429",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    },
+    {
+        "node_id": "OMEGA-NODE-01",
+        "timestamp": "2026-09-10 14:03:21.411082",
+        "host_os": "Android/Termux Sovereign Node",
+        "cpu_utilization_percent": 14.2,
+        "memory_total_mb": 4096,
+        "memory_available_mb": 2500,
+        "memory_usage_percent": 38.9,
+        "kernel_status": "IMMUNE & SELF-GOVERNING"
+    }
+]

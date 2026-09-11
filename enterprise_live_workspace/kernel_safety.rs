@@ -1,0 +1,1 @@
+fn main() { unsafe { let ptr = 0x01 as *mut i32; *ptr = 42; } }

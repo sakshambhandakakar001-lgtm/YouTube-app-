@@ -1,0 +1,14 @@
+2026-09-07 11:06:28,804 DEBUG    root            Loaded Command Group: ['gcloud', 'services']
+2026-09-07 11:06:28,880 DEBUG    root            Loaded Command Group: ['gcloud', 'services', 'enable']
+2026-09-07 11:06:28,893 DEBUG    root            Running [gcloud.services.enable] with arguments: [SERVICE:2: "['youtube.googleapis.com', 'storage.googleapis.com']"]
+2026-09-07 11:06:28,918 DEBUG    root            On GCE from disk cache: False
+2026-09-07 11:06:28,943 DEBUG    root            On GCE from memory cache: False
+2026-09-07 11:06:29,180 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2026-09-07 11:06:31,640 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "POST /v1/projects/my-youtube-app-507905/services:batchEnable?alt=json HTTP/1.1" 200 None
+2026-09-07 11:06:31,696 DEBUG    root            On GCE from memory cache: False
+2026-09-07 11:06:31,733 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2026-09-07 11:06:33,559 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/operations/acat.p2-369063322085-79795069-bd4e-4247-a25b-84bda49cb30e?alt=json HTTP/1.1" 200 None
+2026-09-07 11:06:33,657 INFO     ___FILE_ONLY___ Operation "operations/acat.p2-369063322085-79795069-bd4e-4247-a25b-84bda49cb30e" finished successfully.
+
+2026-09-07 11:06:33,660 DEBUG    root            Chosen display Format:none
+2026-09-07 11:06:33,662 INFO     root            Display format: "none"

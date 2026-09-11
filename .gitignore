@@ -1,0 +1,12 @@
+yt-cloud-data/media/
+node_modules/
+.npm/
+android/
+node_modules/
+.npm/
+android-sdk/
+bin/
+google-cloud-cli-linux-arm.tar.gz
+commandlinetools-linux-9477386_latest.zip
+yt-app-data/
+database.db

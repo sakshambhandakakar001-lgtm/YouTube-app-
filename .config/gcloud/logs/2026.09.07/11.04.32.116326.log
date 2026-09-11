@@ -1,0 +1,16 @@
+2026-09-07 11:04:32,153 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2026-09-07 11:04:33,991 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
+2026-09-07 11:04:34,003 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "project", VALUE: "my-youtube-app-507905"]
+2026-09-07 11:04:34,013 DEBUG    root            On GCE from disk cache: False
+2026-09-07 11:04:34,046 DEBUG    root            On GCE from memory cache: False
+2026-09-07 11:04:34,187 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2026-09-07 11:04:36,114 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/my-youtube-app-507905?alt=json HTTP/1.1" 200 None
+2026-09-07 11:04:36,154 DEBUG    root            On GCE from memory cache: False
+2026-09-07 11:04:36,355 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2026-09-07 11:04:38,353 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v3/effectiveTags?alt=json&pageSize=100&parent=%2F%2Fcloudresourcemanager.googleapis.com%2Fprojects%2Fmy-youtube-app-507905 HTTP/1.1" 200 None
+2026-09-07 11:04:38,358 INFO     ___FILE_ONLY___ [environment: untagged] Read more to tag: g.co/cloud/project-env-tag.
+
+2026-09-07 11:04:38,374 INFO     ___FILE_ONLY___ Updated property [core/project].
+
+2026-09-07 11:04:38,377 DEBUG    root            Chosen display Format:default
+2026-09-07 11:04:38,379 INFO     root            Display format: "default"

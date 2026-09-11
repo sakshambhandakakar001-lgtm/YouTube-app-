@@ -1,0 +1,175 @@
+2026-09-08T18:28:27.254+0000 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonMain] Assuming the daemon was started with following jvm opts: [--add-opens, java.base/java.util=ALL-UNNAMED, --add-opens, java.base/java.lang=ALL-UNNAMED, --add-opens, java.base/java.lang.invoke=ALL-UNNAMED, --add-opens, java.base/java.util=ALL-UNNAMED, --add-opens, java.prefs/java.util.prefs=ALL-UNNAMED, --add-opens, java.prefs/java.util.prefs=ALL-UNNAMED, --add-opens, java.base/java.nio.charset=ALL-UNNAMED, --add-opens, java.base/java.net=ALL-UNNAMED, --add-opens, java.base/java.util.concurrent.atomic=ALL-UNNAMED, -Xmx512m, -Dfile.encoding=UTF-8, -Duser.country, -Duser.language=en, -Duser.variant]
+2026-09-08T18:28:28.520+0000 [DEBUG] [org.gradle.internal.nativeintegration.filesystem.services.FileSystemServices] Native-platform file system integration is not available. Continuing with fallback.
+2026-09-08T18:28:28.715+0000 [DEBUG] [org.gradle.internal.nativeintegration.filesystem.services.FileSystemServices] Using Jdk7Symlink implementation as symlink.
+2026-09-08T18:28:28.799+0000 [INFO] [org.gradle.launcher.daemon.server.Daemon] start() called on daemon - DefaultDaemonContext[uid=478d5f46-0d11-47fa-83ee-c016075e4aa5,javaHome=/data/data/com.termux/files/usr/lib/jvm/java-17-openjdk,daemonRegistryDir=/data/data/com.termux/files/home/.gradle/daemon,pid=30824,idleTimeout=120000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.base/java.nio.charset=ALL-UNNAMED,--add-opens,java.base/java.net=ALL-UNNAMED,--add-opens,java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
+2026-09-08T18:28:28.932+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface ccmni3
+2026-09-08T18:28:28.936+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-08T18:28:28.940+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /10.220.254.112
+2026-09-08T18:28:28.948+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface ccmni0
+2026-09-08T18:28:28.950+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? false
+2026-09-08T18:28:28.953+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding remote address /100.104.206.82
+2026-09-08T18:28:28.954+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding IP addresses for network interface lo
+2026-09-08T18:28:28.958+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Is this a loopback interface? true
+2026-09-08T18:28:28.960+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.InetAddresses] Adding loopback address /127.0.0.1
+2026-09-08T18:28:28.986+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Listening on [e17fa1ad-1773-4bd9-8669-9085fc95b692 port:44069, addresses:[localhost/127.0.0.1]].
+2026-09-08T18:28:29.099+0000 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] Daemon starting at: Tue Sep 08 18:28:28 GMT 2026, with address: [e17fa1ad-1773-4bd9-8669-9085fc95b692 port:44069, addresses:[localhost/127.0.0.1]]
+2026-09-08T18:28:29.101+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertising the daemon address to the clients: [e17fa1ad-1773-4bd9-8669-9085fc95b692 port:44069, addresses:[localhost/127.0.0.1]]
+2026-09-08T18:28:29.104+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Advertised daemon context: DefaultDaemonContext[uid=478d5f46-0d11-47fa-83ee-c016075e4aa5,javaHome=/data/data/com.termux/files/usr/lib/jvm/java-17-openjdk,daemonRegistryDir=/data/data/com.termux/files/home/.gradle/daemon,pid=30824,idleTimeout=120000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.base/java.nio.charset=ALL-UNNAMED,--add-opens,java.base/java.net=ALL-UNNAMED,--add-opens,java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
+2026-09-08T18:28:29.114+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Storing daemon address: [e17fa1ad-1773-4bd9-8669-9085fc95b692 port:44069, addresses:[localhost/127.0.0.1]], context: DefaultDaemonContext[uid=478d5f46-0d11-47fa-83ee-c016075e4aa5,javaHome=/data/data/com.termux/files/usr/lib/jvm/java-17-openjdk,daemonRegistryDir=/data/data/com.termux/files/home/.gradle/daemon,pid=30824,idleTimeout=120000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.base/java.nio.charset=ALL-UNNAMED,--add-opens,java.base/java.net=ALL-UNNAMED,--add-opens,java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
+2026-09-08T18:28:29.221+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2026-09-08T18:28:29.275+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2026-09-08T18:28:29.328+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2026-09-08T18:28:29.332+0000 [LIFECYCLE] [org.gradle.launcher.daemon.server.Daemon] Daemon server started.
+2026-09-08T18:28:29.344+0000 [DEBUG] [org.gradle.launcher.daemon.bootstrap.DaemonStartupCommunication] Completed writing the daemon greeting. Closing streams...
+2026-09-08T18:28:29.401+0000 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stopOnExpiration() called on daemon
+2026-09-08T18:28:29.409+0000 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] awaitExpiration() called on daemon
+2026-09-08T18:28:29.416+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2026-09-08T18:28:29.666+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.TcpIncomingConnector] Accepted connection from /127.0.0.1:44536 to /127.0.0.1:44069.
+2026-09-08T18:28:29.904+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 20: received class org.gradle.launcher.daemon.protocol.Build
+2026-09-08T18:28:29.908+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 20: Received non-IO message from client: Build{id=8ec0cf6b-1fb4-40fd-96af-71493412625d, currentDir=/data/data/com.termux/files/home/android}
+2026-09-08T18:28:29.916+0000 [INFO] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received command: Build{id=8ec0cf6b-1fb4-40fd-96af-71493412625d, currentDir=/data/data/com.termux/files/home/android}.
+2026-09-08T18:28:29.919+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Starting executing command: Build{id=8ec0cf6b-1fb4-40fd-96af-71493412625d, currentDir=/data/data/com.termux/files/home/android} with connection: socket connection from /127.0.0.1:44069 to /127.0.0.1:44536.
+2026-09-08T18:28:29.950+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: started DaemonCommandExecution[command = Build{id=8ec0cf6b-1fb4-40fd-96af-71493412625d, currentDir=/data/data/com.termux/files/home/android}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:44069 to /127.0.0.1:44536] after 0.0 minutes of idle
+2026-09-08T18:28:29.953+0000 [INFO] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Marking the daemon as busy, address: [e17fa1ad-1773-4bd9-8669-9085fc95b692 port:44069, addresses:[localhost/127.0.0.1]]
+2026-09-08T18:28:29.957+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Marking busy by address: [e17fa1ad-1773-4bd9-8669-9085fc95b692 port:44069, addresses:[localhost/127.0.0.1]]
+2026-09-08T18:28:29.965+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2026-09-08T18:28:29.969+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2026-09-08T18:28:29.976+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2026-09-08T18:28:29.980+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2026-09-08T18:28:29.983+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon is running. Sleeping until state changes.
+2026-09-08T18:28:29.986+0000 [INFO] [org.gradle.launcher.daemon.server.exec.StartBuildOrRespondWithBusy] Daemon is about to start building Build{id=8ec0cf6b-1fb4-40fd-96af-71493412625d, currentDir=/data/data/com.termux/files/home/android}. Dispatching build started information...
+2026-09-08T18:28:29.991+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 22: dispatching org.gradle.launcher.daemon.protocol.BuildStarted@1c54239
+2026-09-08T18:28:30.028+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Configuring env variables: [PATH, ANDROID_I18N_ROOT, HISTCONTROL, TERMUX_APP__SE_FILE_CONTEXT, JAVA_HOME, TERMUX_VERSION, TERM, EXTERNAL_STORAGE, LANG, TERMUX_APP__DATA_DIR, ANDROID_HOME, TERMUX_APK_RELEASE, TERMUX_APP__LEGACY_DATA_DIR, ANDROID__BUILD_VERSION_SDK, TERMUX__PREFIX, COLORTERM, ANDROID_ART_ROOT, ANDROID_ROOT, TERMUX__SE_PROCESS_CONTEXT, PWD, BOOTCLASSPATH, _, TERMUX_APP__SE_INFO, TERMUX_MAIN_PACKAGE_FORMAT, SHELL, ANDROID_DATA, TERMUX__HOME, ANDROID_TZDATA_ROOT, OLDPWD, TMPDIR, TERMUX_APP_PID, TERMUX_IS_DEBUGGABLE_BUILD, PREFIX, DEX2OATBOOTCLASSPATH, LD_PRELOAD, TERMUX__ROOTFS_DIR, HOME, SHLVL]
+2026-09-08T18:28:30.039+0000 [WARN] [org.gradle.launcher.daemon.server.exec.EstablishBuildEnvironment] Warning: Unable able to set daemon's environment variables to match the client because: 
+  There is no native integration with this operating environment.
+  If the daemon was started with a significantly different environment from the client, and your build 
+  relies on environment variables, you may experience unexpected behavior.
+2026-09-08T18:28:30.054+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.LogToClient] About to start relaying all logs to the client via the connection.
+2026-09-08T18:28:30.060+0000 [INFO] [org.gradle.launcher.daemon.server.exec.LogToClient] The client will now receive all logging from the daemon (pid: 30824). The daemon log file: /data/data/com.termux/files/home/.gradle/daemon/7.5/daemon-30824.out.log
+2026-09-08T18:28:30.090+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.RequestStopIfSingleUsedDaemon] Requesting daemon stop after processing Build{id=8ec0cf6b-1fb4-40fd-96af-71493412625d, currentDir=/data/data/com.termux/files/home/android}
+2026-09-08T18:28:30.094+0000 [LIFECYCLE] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Daemon will be stopped at the end of the build 
+2026-09-08T18:28:30.097+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Stop as soon as idle requested. The daemon is busy: true
+2026-09-08T18:28:30.101+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon stop has been requested. Sleeping until state changes.
+2026-09-08T18:28:30.150+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has started executing the build.
+2026-09-08T18:28:30.154+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] Executing build with daemon context: DefaultDaemonContext[uid=478d5f46-0d11-47fa-83ee-c016075e4aa5,javaHome=/data/data/com.termux/files/usr/lib/jvm/java-17-openjdk,daemonRegistryDir=/data/data/com.termux/files/home/.gradle/daemon,pid=30824,idleTimeout=120000,priority=NORMAL,daemonOpts=--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.base/java.lang=ALL-UNNAMED,--add-opens,java.base/java.lang.invoke=ALL-UNNAMED,--add-opens,java.base/java.util=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.prefs/java.util.prefs=ALL-UNNAMED,--add-opens,java.base/java.nio.charset=ALL-UNNAMED,--add-opens,java.base/java.net=ALL-UNNAMED,--add-opens,java.base/java.util.concurrent.atomic=ALL-UNNAMED,-Xmx512m,-Dfile.encoding=UTF-8,-Duser.country,-Duser.language=en,-Duser.variant]
+WARNING:Using flatDir should be avoided because it doesn't support any meta-data formats.
+WARNING:Using flatDir should be avoided because it doesn't support any meta-data formats.
+Warning: SDK processing. This version only understands SDK XML versions up to 3 but an SDK XML file of version 4 was encountered. This can happen if you use versions of Android Studio and the command-line tools that were released at different times.
+WARNING:We recommend using a newer Android Gradle plugin to use compileSdk = 36
+
+This Android Gradle plugin (7.4.2) was tested up to compileSdk = 33
+
+This warning can be suppressed by adding
+    android.suppressUnsupportedCompileSdk=36
+to this project's gradle.properties
+
+The build will continue, but you are strongly encouraged to update your project to
+use a newer Android Gradle Plugin that has been tested with compileSdk = 36
+Note: Some input files use unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+AAPT2 aapt2-7.4.2-8841542-linux Daemon #0: Unexpected error output: /data/data/com.termux/files/home/.gradle/caches/transforms-3/61b6587677c613ebaa173af27cc58391/transformed/aapt2-7.4.2-8841542-linux/aapt2: 1: Syntax error: word unexpected (expecting ")")
+AAPT2 aapt2-7.4.2-8841542-linux Daemon #1: Unexpected error output: /data/data/com.termux/files/home/.gradle/caches/transforms-3/61b6587677c613ebaa173af27cc58391/transformed/aapt2-7.4.2-8841542-linux/aapt2: 1: Syntax error: word unexpected (expecting ")")
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:processDebugResources'.
+> Could not resolve all files for configuration ':app:debugRuntimeClasspath'.
+   > Failed to transform appcompat-1.6.1.aar (androidx.appcompat:appcompat:1.6.1) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.category=library, org.gradle.dependency.bundling=external, org.gradle.libraryelements=aar, org.gradle.status=release, org.gradle.usage=java-runtime}.
+      > Execution failed for AarResourcesCompilerTransform: /data/data/com.termux/files/home/.gradle/caches/transforms-3/b450ec9f42de1561023534cf0fe5010c/transformed/appcompat-1.6.1.
+         > AAPT2 aapt2-7.4.2-8841542-linux Daemon #0: AAPT2 is not supported on 32-bit Linux, see supported systems on https://developer.android.com/studio#system-requirements-a-namerequirementsa
+
+   > Failed to transform core-1.10.1.aar (androidx.core:core:1.10.1) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.category=library, org.gradle.dependency.bundling=external, org.gradle.libraryelements=aar, org.gradle.status=release, org.gradle.usage=java-runtime}.
+      > Execution failed for AarResourcesCompilerTransform: /data/data/com.termux/files/home/.gradle/caches/transforms-3/1b9e020d21dbd1206055e88b9a6ac9ef/transformed/core-1.10.1.
+         > AAPT2 aapt2-7.4.2-8841542-linux Daemon #1: AAPT2 is not supported on 32-bit Linux, see supported systems on https://developer.android.com/studio#system-requirements-a-namerequirementsa
+
+   > Failed to transform core-1.10.1.aar (androidx.core:core:1.10.1) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.status=release}.
+      > Execution failed for AarResourcesCompilerTransform: /data/data/com.termux/files/home/.gradle/caches/transforms-3/1b9e020d21dbd1206055e88b9a6ac9ef/transformed/core-1.10.1.
+         > AAPT2 aapt2-7.4.2-8841542-linux Daemon #1: AAPT2 is not supported on 32-bit Linux, see supported systems on https://developer.android.com/studio#system-requirements-a-namerequirementsa
+
+   > Failed to transform core-1.10.1.aar (androidx.core:core:1.10.1) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.status=release}.
+      > Execution failed for AarResourcesCompilerTransform: /data/data/com.termux/files/home/.gradle/caches/transforms-3/1b9e020d21dbd1206055e88b9a6ac9ef/transformed/core-1.10.1.
+         > AAPT2 aapt2-7.4.2-8841542-linux Daemon #1: AAPT2 is not supported on 32-bit Linux, see supported systems on https://developer.android.com/studio#system-requirements-a-namerequirementsa
+
+   > Failed to transform core-1.10.1.aar (androidx.core:core:1.10.1) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.status=release}.
+      > Execution failed for AarResourcesCompilerTransform: /data/data/com.termux/files/home/.gradle/caches/transforms-3/1b9e020d21dbd1206055e88b9a6ac9ef/transformed/core-1.10.1.
+         > AAPT2 aapt2-7.4.2-8841542-linux Daemon #1: AAPT2 is not supported on 32-bit Linux, see supported systems on https://developer.android.com/studio#system-requirements-a-namerequirementsa
+
+   > Failed to transform core-1.10.1.aar (androidx.core:core:1.10.1) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.status=release}.
+      > Execution failed for AarResourcesCompilerTransform: /data/data/com.termux/files/home/.gradle/caches/transforms-3/1b9e020d21dbd1206055e88b9a6ac9ef/transformed/core-1.10.1.
+         > AAPT2 aapt2-7.4.2-8841542-linux Daemon #1: AAPT2 is not supported on 32-bit Linux, see supported systems on https://developer.android.com/studio#system-requirements-a-namerequirementsa
+
+   > Failed to transform core-1.10.1.aar (androidx.core:core:1.10.1) to match attributes {artifactType=android-compiled-dependencies-resources, org.gradle.status=release}.
+      > Execution failed for AarResourcesCompilerTransform: /data/data/com.termux/files/home/.gradle/caches/transforms-3/1b9e020d21dbd1206055e88b9a6ac9ef/transformed/core-1.10.1.
+         > AAPT2 aapt2-7.4.2-8841542-linux Daemon #1: AAPT2 is not supported on 32-bit Linux, see supported systems on https://developer.android.com/studio#system-requirements-a-namerequirementsa
+
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+BUILD FAILED in 4m 35s
+47 actionable tasks: 46 executed, 1 up-to-date
+2026-09-08T18:32:47.671+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ExecuteBuild] The daemon has finished executing the build.
+2026-09-08T18:32:47.677+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon stop has been requested. Sleeping until state changes.
+2026-09-08T18:32:47.680+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: finished waiting for DaemonCommandExecution[command = Build{id=8ec0cf6b-1fb4-40fd-96af-71493412625d, currentDir=/data/data/com.termux/files/home/android}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:44069 to /127.0.0.1:44536]. Result org.gradle.launcher.daemon.server.DaemonStateCoordinator@1c846d6 with state StopRequested
+2026-09-08T18:32:47.682+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Command execution: completed DaemonCommandExecution[command = Build{id=8ec0cf6b-1fb4-40fd-96af-71493412625d, currentDir=/data/data/com.termux/files/home/android}, connection = DefaultDaemonConnection: socket connection from /127.0.0.1:44069 to /127.0.0.1:44536]
+2026-09-08T18:32:47.684+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] resetting idle timer
+2026-09-08T18:32:47.685+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] Marking daemon stopped due to command completed and stop requested. The daemon is running a build: false
+2026-09-08T18:32:47.686+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonStateCoordinator] daemon has stopped.
+2026-09-08T18:32:47.687+0000 [DEBUG] [org.gradle.launcher.daemon.server.exec.ReturnResult] Daemon is dispatching the build result: Success[value=org.gradle.launcher.exec.BuildActionResult@1770c56]
+2026-09-08T18:32:47.688+0000 [DEBUG] [org.gradle.launcher.daemon.server.Daemon] stop() called on daemon
+2026-09-08T18:32:47.689+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 19: dispatching Success[value=org.gradle.launcher.exec.BuildActionResult@1770c56]
+2026-09-08T18:32:47.690+0000 [INFO] [org.gradle.launcher.daemon.server.Daemon] Stop requested. Daemon is removing its presence from the registry...
+2026-09-08T18:32:47.692+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Removing our presence to clients, eg. removing this address from the registry: [e17fa1ad-1773-4bd9-8669-9085fc95b692 port:44069, addresses:[localhost/127.0.0.1]]
+2026-09-08T18:32:47.694+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Removing daemon address: [e17fa1ad-1773-4bd9-8669-9085fc95b692 port:44069, addresses:[localhost/127.0.0.1]]
+2026-09-08T18:32:47.698+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2026-09-08T18:32:47.702+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2026-09-08T18:32:47.706+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
+2026-09-08T18:32:47.707+0000 [DEBUG] [org.gradle.launcher.daemon.server.DaemonRegistryUpdater] Address removed from registry.
+2026-09-08T18:32:47.775+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Finishing executing command: Build{id=8ec0cf6b-1fb4-40fd-96af-71493412625d, currentDir=/data/data/com.termux/files/home/android}
+2026-09-08T18:32:48.324+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 20: received class org.gradle.launcher.daemon.protocol.CloseInput
+2026-09-08T18:32:48.326+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 20: Received IO message from client: org.gradle.launcher.daemon.protocol.CloseInput@82d0b7
+2026-09-08T18:32:48.340+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 20: received class org.gradle.launcher.daemon.protocol.Finished
+2026-09-08T18:32:48.341+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 20: Received non-IO message from client: org.gradle.launcher.daemon.protocol.Finished@13a8010
+2026-09-08T18:32:48.343+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultIncomingConnectionHandler] Received finished message: org.gradle.launcher.daemon.protocol.Finished@13a8010
+2026-09-08T18:32:48.345+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 19: stopping connection
+2026-09-08T18:32:48.355+0000 [DEBUG] [org.gradle.internal.remote.internal.inet.SocketConnection] Discarding EOFException: java.io.EOFException
+2026-09-08T18:32:48.357+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 20: received null
+2026-09-08T18:32:48.359+0000 [DEBUG] [org.gradle.launcher.daemon.server.DefaultDaemonConnection] thread 20: Received end-of-input from client.
+2026-09-08T18:32:48.361+0000 [DEBUG] [org.gradle.launcher.daemon.server.SynchronizedDispatchConnection] thread 19: stopping connection
+2026-09-08T18:32:48.379+0000 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for jars (/data/data/com.termux/files/home/.gradle/caches/jars-9)
+2026-09-08T18:32:48.381+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on jars (/data/data/com.termux/files/home/.gradle/caches/jars-9).
+2026-09-08T18:32:48.393+0000 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] jars (/data/data/com.termux/files/home/.gradle/caches/jars-9) has last been fully cleaned up 2 hours ago
+2026-09-08T18:32:48.396+0000 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for Artifact transforms cache (/data/data/com.termux/files/home/.gradle/caches/transforms-3)
+2026-09-08T18:32:48.398+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on Artifact transforms cache (/data/data/com.termux/files/home/.gradle/caches/transforms-3).
+2026-09-08T18:32:48.687+0000 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for file content cache (/data/data/com.termux/files/home/.gradle/caches/7.5/fileContent)
+2026-09-08T18:32:48.694+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on file content cache (/data/data/com.termux/files/home/.gradle/caches/7.5/fileContent).
+2026-09-08T18:32:48.721+0000 [DEBUG] [org.gradle.cache.internal.DefaultCacheAccess] Cache Generated Gradle JARs cache (/data/data/com.termux/files/home/.gradle/caches/7.5/generated-gradle-jars) was closed 0 times.
+2026-09-08T18:32:48.722+0000 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for artifact cache (/data/data/com.termux/files/home/.gradle/caches/modules-2)
+2026-09-08T18:32:48.724+0000 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-metadata.bin (/data/data/com.termux/files/home/.gradle/caches/modules-2/metadata-2.99/module-metadata.bin)
+2026-09-08T18:32:48.726+0000 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-artifact.bin (/data/data/com.termux/files/home/.gradle/caches/modules-2/metadata-2.99/module-artifact.bin)
+2026-09-08T18:32:48.728+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/data/data/com.termux/files/home/.gradle/caches/modules-2).
+2026-09-08T18:32:48.734+0000 [DEBUG] [org.gradle.cache.internal.DefaultPersistentDirectoryStore] artifact cache (/data/data/com.termux/files/home/.gradle/caches/modules-2) has last been fully cleaned up 2 hours ago
+2026-09-08T18:32:48.736+0000 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for journal cache (/data/data/com.termux/files/home/.gradle/caches/journal-1)
+2026-09-08T18:32:48.738+0000 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache file-access.bin (/data/data/com.termux/files/home/.gradle/caches/journal-1/file-access.bin)
+2026-09-08T18:32:48.741+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on journal cache (/data/data/com.termux/files/home/.gradle/caches/journal-1).
+2026-09-08T18:32:48.770+0000 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for file hash cache (/data/data/com.termux/files/home/.gradle/caches/7.5/fileHashes)
+2026-09-08T18:32:48.772+0000 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache fileHashes.bin (/data/data/com.termux/files/home/.gradle/caches/7.5/fileHashes/fileHashes.bin)
+2026-09-08T18:32:48.774+0000 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache resourceHashesCache.bin (/data/data/com.termux/files/home/.gradle/caches/7.5/fileHashes/resourceHashesCache.bin)
+2026-09-08T18:32:48.776+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on file hash cache (/data/data/com.termux/files/home/.gradle/caches/7.5/fileHashes).
+2026-09-08T18:32:48.781+0000 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for execution history cache (/data/data/com.termux/files/home/.gradle/caches/7.5/executionHistory)
+2026-09-08T18:32:48.789+0000 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache executionHistory.bin (/data/data/com.termux/files/home/.gradle/caches/7.5/executionHistory/executionHistory.bin)
+2026-09-08T18:32:48.791+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on execution history cache (/data/data/com.termux/files/home/.gradle/caches/7.5/executionHistory).
+2026-09-08T18:32:48.796+0000 [DEBUG] [org.gradle.cache.internal.LockOnDemandCrossProcessCacheAccess] Releasing file lock for Java compile cache (/data/data/com.termux/files/home/.gradle/caches/7.5/javaCompile)
+2026-09-08T18:32:48.798+0000 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache jarAnalysis.bin (/data/data/com.termux/files/home/.gradle/caches/7.5/javaCompile/jarAnalysis.bin)
+2026-09-08T18:32:48.801+0000 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache classAnalysis.bin (/data/data/com.termux/files/home/.gradle/caches/7.5/javaCompile/classAnalysis.bin)
+2026-09-08T18:32:48.804+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on Java compile cache (/data/data/com.termux/files/home/.gradle/caches/7.5/javaCompile).
+2026-09-08T18:32:48.819+0000 [DEBUG] [org.gradle.launcher.daemon.registry.PersistentDaemonRegistry] Removing daemon address: [e17fa1ad-1773-4bd9-8669-9085fc95b692 port:44069, addresses:[localhost/127.0.0.1]]
+Daemon vm is shutting down... The daemon has exited normally or was terminated in response to a user interrupt.
+2026-09-08T18:32:48.822+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on daemon addresses registry.
+2026-09-08T18:32:48.830+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired on daemon addresses registry.
+2026-09-08T18:32:48.835+0000 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on daemon addresses registry.
