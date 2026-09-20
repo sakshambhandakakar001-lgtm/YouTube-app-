@@ -3,62 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flixify Pro</title>
+    <title>Flixify Pro - YouTube Clone</title>
     <style>
-        body { background-color: #0f0f0f; color: #fff; font-family: Roboto, Arial, sans-serif; margin: 0; padding-bottom: 70px; }
-        .header { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; background: #0f0f0f; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #222; }
-        .logo { color: #f00; font-weight: bold; font-size: 20px; text-decoration: none; }
-        .search-bar { background: #121212; border: 1px solid #333; color: #fff; padding: 8px 16px; border-radius: 20px; width: 60%; }
-        .categories { display: flex; overflow-x: auto; padding: 10px; gap: 8px; white-space: nowrap; border-bottom: 1px solid #222; }
-        .cat-btn { background: #272727; color: #fff; border: none; padding: 6px 12px; border-radius: 16px; font-size: 14px; cursor: pointer; }
+        body { background: #0f0f0f; color: #fff; font-family: Roboto, Arial, sans-serif; margin: 0; padding-bottom: 70px; }
+        .header { display: flex; justify-content: space-between; align-items: center; padding: 10px 16px; background: #0f0f0f; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #222; }
+        .logo { color: #ff0000; font-weight: bold; font-size: 20px; text-decoration: none; display: flex; align-items: center; gap: 5px; }
+        .search-box { background: #121212; border: 1px solid #303030; color: #fff; padding: 8px 14px; border-radius: 20px; width: 55%; font-size: 14px; }
+        .categories { display: flex; overflow-x: auto; padding: 10px 16px; gap: 10px; border-bottom: 1px solid #222; scrollbar-width: none; }
+        .cat-btn { background: #272727; color: #fff; border: none; padding: 6px 14px; border-radius: 12px; font-size: 13px; font-weight: 500; white-space: nowrap; }
         .cat-btn.active { background: #fff; color: #000; }
-        .video-card { margin-bottom: 20px; }
-        .video-thumbnail { width: 100%; height: 210px; background: #222; object-fit: cover; }
-        .video-info { display: flex; padding: 12px; gap: 12px; }
-        .avatar { width: 36px; height: 36px; border-radius: 50%; background: #555; display: flex; align-items: center; justify-content: center; font-weight: bold; }
-        .details h4 { margin: 0 0 4px 0; font-size: 15px; }
-        .details p { margin: 0; color: #aaa; font-size: 12px; }
-        .nav-bar { position: fixed; bottom: 0; width: 100%; background: #0f0f0f; display: flex; justify-content: space-around; padding: 10px 0; border-top: 1px solid #222; }
-        .nav-item { color: #aaa; text-decoration: none; font-size: 11px; text-align: center; }
+        .video-card { width: 100%; margin-bottom: 20px; text-decoration: none; color: inherit; display: block; }
+        .thumbnail-container { position: relative; width: 100%; aspect-ratio: 16/9; background: #202020; }
+        .thumbnail-container video, .thumbnail-container img { width: 100%; height: 100%; object-fit: cover; }
+        .video-details { display: flex; padding: 12px 16px; gap: 12px; }
+        .avatar { width: 36px; height: 36px; border-radius: 50%; background: #ff4e45; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: bold; flex-shrink: 0; }
+        .info h3 { margin: 0 0 4px 0; font-size: 15px; font-weight: 500; line-height: 1.3; }
+        .info p { margin: 0; color: #aaa; font-size: 12px; }
+        .nav-bar { position: fixed; bottom: 0; width: 100%; background: #0f0f0f; display: flex; justify-content: space-around; padding: 8px 0; border-top: 1px solid #222; z-index: 100; }
+        .nav-item { color: #aaa; text-decoration: none; font-size: 10px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 3px; }
         .nav-item.active { color: #fff; }
     </style>
 </head>
 <body>
     <div class="header">
-        <a href="/" class="logo">Flixify Pro</a>
-        <input type="text" class="search-bar" placeholder="Search Master & AI">
+        <a href="/" class="logo">▶ Flixify</a>
+        <input type="text" class="search-box" placeholder="Search YouTube...">
     </div>
 
     <div class="categories">
         <button class="cat-btn active">All</button>
-        <button class="cat-btn">Subscriptions</button>
         <button class="cat-btn">Gaming</button>
         <button class="cat-btn">Music</button>
-        <button class="cat-btn">Podcasts</button>
+        <button class="cat-btn">Tech</button>
+        <button class="cat-btn">Shorts</button>
     </div>
 
-    <div class="feed" id="videoFeed">
-        <div class="video-card">
-            <video class="video-thumbnail" controls poster="">
-                <source src="/static/videos/sample.mp4" type="video/mp4">
-            </video>
-            <div class="video-info">
+    <div id="videoFeed">
+        <a href="/watch/1" class="video-card">
+            <div class="thumbnail-container">
+                <video src="/static/videos/sample.mp4" muted loop autoplay preload="metadata"></video>
+            </div>
+            <div class="video-details">
                 <div class="avatar">S</div>
-                <div class="details">
-                    <h4>Song</h4>
-                    <p>Saksham • 15 views • Tech</p>
+                <div class="info">
+                    <h3>Song - High Quality Stream</h3>
+                    <p>Saksham • 1.2K views • 2 hours ago</p>
                 </div>
             </div>
-            {% include "video_buttons.html" ignore missing %}
-        </div>
+        </a>
     </div>
 
     <div class="nav-bar">
-        <a href="/" class="nav-item active">Home</a>
-        <a href="/shorts" class="nav-item">Shorts</a>
-        <a href="/upload" class="nav-item">+</a>
-        <a href="/community" class="nav-item">Community</a>
-        <a href="/you" class="nav-item">You</a>
+        <a href="/" class="nav-item active"><span>🏠</span>Home</a>
+        <a href="/shorts" class="nav-item"><span>⚡</span>Shorts</a>
+        <a href="/upload" class="nav-item"><span>➕</span>Create</a>
+        <a href="/community" class="nav-item"><span>💬</span>Community</a>
+        <a href="/you" class="nav-item"><span>👤</span>You</a>
     </div>
 </body>
 </html>
