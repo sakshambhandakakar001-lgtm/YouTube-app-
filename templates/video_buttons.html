@@ -1,0 +1,31 @@
+<div class="video-actions">
+  <button onclick="reactVideo({{ video.id }}, 'like')">👍 Like</button>
+  <button onclick="reactVideo({{ video.id }}, 'dislike')">👎 Dislike</button>
+</div>
+
+{% if session.get('user_id') == video.creator_id %}
+  <button onclick="deleteVideo({{ video.id }})">🗑️ Delete Video</button>
+{% endif %}
+
+<script>
+function reactVideo(videoId, actionType) {
+  fetch(`/video/${videoId}/react`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ action: actionType })
+  })
+  .then(res => res.json())
+  .then(data => alert(data.message));
+}
+
+function deleteVideo(videoId) {
+  if (confirm("Kya aap sach mein ye video delete karna chahte hain?")) {
+    fetch(`/video/${videoId}/delete`, { method: 'POST' })
+    .then(res => res.json())
+    .then(data => {
+      alert(data.message);
+      window.location.reload();
+    });
+  }
+}
+</script>
