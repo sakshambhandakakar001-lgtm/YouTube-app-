@@ -1,3 +1,5 @@
+from video_features import video_bp
+
 import os
 import sqlite3
 import subprocess
@@ -9,6 +11,8 @@ from flask import Flask, request, send_from_directory, render_template_string, r
 from werkzeug.security import generate_password_hash, check_password_hash
 
 app = Flask(__name__)
+app.register_blueprint(video_bp)
+
 app.secret_key = os.getenv('SECRET_KEY', 'default_secret_key_flixify_pro')
 
 BASE_DIR = os.path.expanduser('~/yt-cloud-data')
