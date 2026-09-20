@@ -3,18 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube App</title>
-    <!-- Bootstrap CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Flixify Pro</title>
+    <style>
+        body { background-color: #0f0f0f; color: #fff; font-family: Roboto, Arial, sans-serif; margin: 0; padding-bottom: 70px; }
+        .header { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; background: #0f0f0f; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid #222; }
+        .logo { color: #f00; font-weight: bold; font-size: 20px; text-decoration: none; }
+        .search-bar { background: #121212; border: 1px solid #333; color: #fff; padding: 8px 16px; border-radius: 20px; width: 60%; }
+        .categories { display: flex; overflow-x: auto; padding: 10px; gap: 8px; white-space: nowrap; border-bottom: 1px solid #222; }
+        .cat-btn { background: #272727; color: #fff; border: none; padding: 6px 12px; border-radius: 16px; font-size: 14px; cursor: pointer; }
+        .cat-btn.active { background: #fff; color: #000; }
+        .video-card { margin-bottom: 20px; }
+        .video-thumbnail { width: 100%; height: 210px; background: #222; object-fit: cover; }
+        .video-info { display: flex; padding: 12px; gap: 12px; }
+        .avatar { width: 36px; height: 36px; border-radius: 50%; background: #555; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+        .details h4 { margin: 0 0 4px 0; font-size: 15px; }
+        .details p { margin: 0; color: #aaa; font-size: 12px; }
+        .nav-bar { position: fixed; bottom: 0; width: 100%; background: #0f0f0f; display: flex; justify-content: space-around; padding: 10px 0; border-top: 1px solid #222; }
+        .nav-item { color: #aaa; text-decoration: none; font-size: 11px; text-align: center; }
+        .nav-item.active { color: #fff; }
+    </style>
 </head>
-<body class="bg-light">
-    <div class="container mt-5">
-        <div class="text-center">
-            <h1 class="mb-4 text-primary">Welcome to My YouTube App</h1>
-            <p class="lead">Bootstrap is successfully integrated!</p>
+<body>
+    <div class="header">
+        <a href="/" class="logo">Flixify Pro</a>
+        <input type="text" class="search-bar" placeholder="Search Master & AI">
+    </div>
+
+    <div class="categories">
+        <button class="cat-btn active">All</button>
+        <button class="cat-btn">Subscriptions</button>
+        <button class="cat-btn">Gaming</button>
+        <button class="cat-btn">Music</button>
+        <button class="cat-btn">Podcasts</button>
+    </div>
+
+    <div class="feed" id="videoFeed">
+        <div class="video-card">
+            <video class="video-thumbnail" controls poster="">
+                <source src="/static/videos/sample.mp4" type="video/mp4">
+            </video>
+            <div class="video-info">
+                <div class="avatar">S</div>
+                <div class="details">
+                    <h4>Song</h4>
+                    <p>Saksham • 15 views • Tech</p>
+                </div>
+            </div>
+            {% include "video_buttons.html" ignore missing %}
         </div>
+    </div>
+
+    <div class="nav-bar">
+        <a href="/" class="nav-item active">Home</a>
+        <a href="/shorts" class="nav-item">Shorts</a>
+        <a href="/upload" class="nav-item">+</a>
+        <a href="/community" class="nav-item">Community</a>
+        <a href="/you" class="nav-item">You</a>
     </div>
 </body>
 </html>
-
-{% include "video_buttons.html" %}
