@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flixify Pro - Welcome</title>
+    <style>
+        body { background:#0f0f0f; color:#fff; font-family:sans-serif; margin:0; display:flex; justify-content:center; align-items:center; min-height:100vh; padding:20px; box-sizing:border-box; }
+        .card { background:#181818; border:1px solid #282828; border-radius:16px; padding:24px; width:100%; max-width:380px; box-shadow:0 8px 24px rgba(0,0,0,0.5); }
+        h2 { margin-top:0; color:#fff; font-size:22px; text-align:center; }
+        .group { margin-bottom:14px; }
+        label { font-size:12px; color:#aaa; display:block; margin-bottom:6px; }
+        input { width:100%; padding:12px; background:#0f0f0f; border:1px solid #333; color:#fff; border-radius:8px; box-sizing:border-box; font-size:14px; outline:none; }
+        input:focus { border-color:#3ea6ff; }
+        button { width:100%; padding:12px; background:#3ea6ff; color:#000; font-weight:bold; border:none; border-radius:20px; font-size:15px; cursor:pointer; margin-top:10px; }
+        .toggle { text-align:center; margin-top:16px; font-size:13px; color:#aaa; cursor:pointer; }
+        .toggle span { color:#3ea6ff; text-decoration:underline; }
+    </style>
+</head>
+<body>
+
+<div class="card">
+    <h2 id="title">Create Flixify Account</h2>
+
+    <!-- SIGN UP FORM -->
+    <form id="su-form" action="/signup" method="POST">
+        <div class="group">
+            <label>Username</label>
+            <input type="text" name="username" placeholder="Apna Username dalein" required>
+        </div>
+        <div class="group">
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Password create karein" required>
+        </div>
+        <div class="group">
+            <label>Email ID (Ek Email se ek hi account banega)</label>
+            <input type="email" name="email" placeholder="example@gmail.com" required>
+        </div>
+        <button type="submit">Sign Up & Continue</button>
+    </form>
+
+    <!-- LOGIN FORM -->
+    <form id="lg-form" action="/login" method="POST" style="display:none;">
+        <div class="group">
+            <label>Email ID</label>
+            <input type="email" name="email" placeholder="Apni Email ID dalein" required>
+        </div>
+        <div class="group">
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Password dalein" required>
+        </div>
+        <button type="submit" style="background:#e50914; color:#fff;">Log In</button>
+    </form>
+
+    <div class="toggle" id="toggle-btn" onclick="switchForm()">
+        Pehle se account hai? <span>Log In Karein</span>
+    </div>
+</div>
+
+<script>
+    var isLogin = false;
+    function switchForm() {
+        isLogin = !isLogin;
+        if(isLogin) {
+            document.getElementById('title').innerText = 'Welcome Back (Log In)';
+            document.getElementById('su-form').style.display = 'none';
+            document.getElementById('lg-form').style.display = 'block';
+            document.getElementById('toggle-btn').innerHTML = 'Naye user ho? <span>Sign Up Karein</span>';
+        } else {
+            document.getElementById('title').innerText = 'Create Flixify Account';
+            document.getElementById('su-form').style.display = 'block';
+            document.getElementById('lg-form').style.display = 'none';
+            document.getElementById('toggle-btn').innerHTML = 'Pehle se account hai? <span>Log In Karein</span>';
+        }
+    }
+</script>
+
+</body>
+</html>

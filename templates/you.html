@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You - YouTube Clone</title>
+    <style>
+        body { background: #0f0f0f; color: #fff; font-family: Roboto, Arial, sans-serif; margin: 0; padding: 16px; padding-bottom: 70px; }
+        .profile-header { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+        .avatar-lg { width: 64px; height: 64px; border-radius: 50%; background: #4caf50; display: flex; align-items: center; justify-content: center; font-size: 28px; font-weight: bold; }
+        .user-info h2 { margin: 0; font-size: 20px; }
+        .user-info p { margin: 2px 0 0; color: #aaa; font-size: 12px; }
+        .btn-row { display: flex; gap: 8px; margin-bottom: 24px; overflow-x: auto; scrollbar-width: none; }
+        .btn-pill { background: #272727; color: #fff; border: none; padding: 8px 14px; border-radius: 18px; font-size: 12px; font-weight: 500; text-decoration: none; white-space: nowrap; }
+        .section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+        .section-header h3 { margin: 0; font-size: 16px; }
+        .horizontal-scroll { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 10px; scrollbar-width: none; }
+        .card-sm { width: 140px; flex-shrink: 0; text-decoration: none; color: #fff; }
+        .card-sm video, .card-sm img { width: 140px; height: 80px; border-radius: 8px; background: #222; object-fit: cover; }
+        .card-sm p { margin: 4px 0 0; font-size: 12px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+        .menu-list { display: flex; flex-direction: column; gap: 16px; margin-top: 20px; }
+        .menu-item { display: flex; align-items: center; gap: 16px; text-decoration: none; color: #fff; font-size: 14px; }
+        .nav-bar { position: fixed; bottom: 0; left: 0; width: 100%; background: #0f0f0f; display: flex; justify-content: space-around; padding: 8px 0; border-top: 1px solid #222; }
+        .nav-item { color: #aaa; text-decoration: none; font-size: 10px; text-align: center; }
+        .nav-item.active { color: #fff; }
+    </style>
+</head>
+<body>
+    <div style="display: flex; justify-content: flex-end; gap: 16px; font-size: 18px; margin-bottom: 10px;">
+        <span>🔔</span><span>🔍</span><a href="/settings" style="color:#fff; text-decoration:none;">⚙️</a>
+    </div>
+
+    <div class="profile-header">
+        <div class="avatar-lg">M</div>
+        <div class="user-info">
+            <h2>MOG_BOY_</h2>
+            <p>@MOG-BOY-j8t • <a href="/edit_channel" style="color: #aaa; text-decoration: none;"><a href="/edit_channel" style="color:#3ea6ff;text-decoration:none;">View channel ></a></a></p>
+        </div>
+    </div>
+
+    <div class="btn-row">
+        <a href="#" class="btn-pill">👥 Switch account</a>
+        <a href="#" class="btn-pill">🌐 Google Account</a>
+        <a href="#" class="btn-pill">🕶️ Turn on Incognito</a>
+    </div>
+
+    <div class="section-header">
+        <h3>History</h3>
+        <a href="#" style="color:#3ea6ff; font-size: 12px; text-decoration:none;">View all</a>
+    </div>
+
+    <div class="horizontal-scroll">
+        <a href="/watch/1" class="card-sm">
+            <video src="/static/videos/sample.mp4"></video>
+            <p>Barsat song #relaxing</p>
+        </a>
+        <a href="/watch/1" class="card-sm">
+            <video src="/static/videos/sample.mp4"></video>
+            <p>Work and Energy in 25 Minutes 🔥</p>
+        </a>
+    </div>
+
+    <div class="section-header" style="margin-top: 20px;">
+        <h3>Playlists</h3>
+        <span style="font-size: 18px;">+</span>
+    </div>
+
+    <div class="horizontal-scroll">
+        <div class="card-sm">
+            <div style="width:140px; height:80px; background:#222; border-radius:80px; display:flex; align-items:center; justify-content:center; border-radius:8px;">👍 Liked videos (14)</div>
+        </div>
+        <div class="card-sm">
+            <div style="width:140px; height:80px; background:#222; border-radius:80px; display:flex; align-items:center; justify-content:center; border-radius:8px;">🕒 Watch later (11)</div>
+        </div>
+    </div>
+
+    <div class="menu-list">
+        <a href="/my_videos" class="menu-item"><span>▶</span> Your videos</a>
+        <a href="/downloads" class="menu-item"><span>📥</span> Downloads</a>
+    </div>
+
+    <div class="nav-bar">
+        <a href="/" class="nav-item"><span>🏠</span>Home</a>
+        <a href="/shorts" class="nav-item"><span>⚡</span>Shorts</a>
+        <a href="/upload" class="nav-item"><span>➕</span></a>
+        <a href="/analytics" class="nav-item"><span>📊</span>Studio</a>
+        <a href="/you" class="nav-item active"><span>👤</span>You</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+import sqlite3
+import os
+
+BASE_DIR = os.path.expanduser('~/yt-cloud-data')
+DB_FILE = os.path.join(BASE_DIR, 'database.db')
+
+def clean_urls():
+    conn = sqlite3.connect(DB_FILE)
+    c = conn.cursor()
+    # Direct YouTube Embed URLs fix karna
+    c.execute("UPDATE videos SET filename = replace(filename, '/videos/https://www.youtube.com/embed/', 'https://www.youtube.com/embed/') WHERE filename LIKE '%/videos/%'")
+    conn.commit()
+    conn.close()
+    print("Database URLs successfully clean aur fix ho gayi hain!")
+
+if __name__ == '__main__':
+    clean_urls()
