@@ -1,0 +1,13 @@
+{
+  "background_color": "#000000",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Flixify",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Flixify",
+  "start_url": "/",
+  "theme_color": "#000000",
+  "id": "flx-01",
+  "description": "Flixify App"
+}
