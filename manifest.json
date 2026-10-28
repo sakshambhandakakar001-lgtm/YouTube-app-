@@ -1,0 +1,12 @@
+{
+  "background_color": "#000000",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Flixify",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Flixify",
+  "start_url": "/",
+  "theme_color": "#000000",
+  "id": "Flx-01"
+}
